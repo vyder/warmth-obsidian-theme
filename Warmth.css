@@ -36,7 +36,8 @@
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-    --font-family: Metropolis, Avenir, "Avenir Next";
+    /* --font-family: Metropolis, Avenir, "Avenir Next"; */
+    --font-family: "Helvetica Neue", Avenir, "Avenir Next";
 }
 
 html {
@@ -216,7 +217,12 @@ img {
 
 .markdown-preview-view {
     padding: 30px;
+    padding-top: 10px;
     border-left: 1px solid var(--background-modifier-border);
+}
+
+.CodeMirror-lines {
+    padding-top: 10px;
 }
 
 .markdown-preview-view p,
@@ -328,7 +334,7 @@ a.tag:hover {
 
 
 /* Andy Matuschak mode! V2! to move title bars sideways.  */
-.workspace-split.mod-vertical { overflow-x:auto; }
+/* .workspace-split.mod-vertical { overflow-x:auto; }
 .workspace-leaf, .workspace-split > .workspace-split { min-width: 650px; min-height: 500px; }
 .workspace-split.mod-horizontal { overflow-y: auto; }
 
@@ -361,16 +367,19 @@ a.tag:hover {
 }
 
 .view-header {
+    writing-mode: vertical-lr;
     border-right: 1px solid var(--background-secondary-alt);
     border-left: 2px solid var(--background-secondary-alt);
     border-top: none;
     border-bottom: none;
+    height: auto;
 }
 
 .view-header-title-container {
     width: 40px;
     height: unset;
     padding-left: unset;
+    padding-top: 20px;
 }
 
 .workspace-leaf.mod-active .view-header {
@@ -379,12 +388,12 @@ a.tag:hover {
 }
 
 .view-actions {
-    padding: 0px;
+    padding: 10px 5px;
 }
 
 .view-header-title-container:after {
     width: 100%;
-    height: 0px;
+    height: 30px;
     top:unset;
     bottom: 0;
     background: linear-gradient(to bottom, transparent, var(--background-secondary));
@@ -401,9 +410,9 @@ a.tag:hover {
 
 .view-content {
     height: 100%;
-}
+} */
 
-/* collapsing sidebars 
+/* collapsing sidebars
 .app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover), .app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
     width: 0px !important;
   }*/
